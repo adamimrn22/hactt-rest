@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "rootDir": "./src",
+        "outDir": "./dist",
+
+        "baseUrl": "./src",
+        "paths": {
+            "@/*": ["*"]
+        },
+
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
+        "target": "esnext",
+        "lib": ["esnext"],
+
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true
+    },
+    "strict": true,
+    "ts-node": {
+        "transpileOnly": true,
+        "require": ["tsconfig-paths/register"]
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"]
+}

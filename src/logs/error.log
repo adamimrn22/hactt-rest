@@ -1,0 +1,631 @@
+2025-09-11 17:45:21 [[31merror[39m]: PrismaClientInitializationError: Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at r (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/node_modules/@prisma/client/src/runtime/core/engines/library/LibraryEngine.ts:440:17)
+    at async startServer (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/server.ts:12:9)
+2025-09-11 21:33:37 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.findMany()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repostiory.ts:64:43[24m
+
+  [2m[90m61[39m     [34m}[39m[22m
+  [2m[90m62[39m [34m)[39m[34m:[39m Promise<User[34m[[39m[34m][39m> [34m{[39m[22m
+  [2m[90m63[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m64[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mfindMany[39m[34m([39m[22m
+The table `hactt.User` does not exist in the current database.
+2025-09-11 21:33:37 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.count()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repostiory.ts:114:43[24m
+
+  [2m[90m111[39m [22m
+  [2m[90m112[39m [36masync[39m [36mcount[39m[34m([39mwhere?[34m:[39m Prisma[34m.[39mUserWhereInput[34m)[39m[34m:[39m Promise<number> [34m{[39m[22m
+  [2m[90m113[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m114[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mcount[39m[34m([39m[22m
+The table `hactt.User` does not exist in the current database.
+2025-09-11 21:36:43 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.findMany()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repostiory.ts:64:43[24m
+
+  [2m[90m61[39m     [34m}[39m[22m
+  [2m[90m62[39m [34m)[39m[34m:[39m Promise<User[34m[[39m[34m][39m> [34m{[39m[22m
+  [2m[90m63[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m64[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mfindMany[39m[34m([39m[22m
+The table `hactt.User` does not exist in the current database.
+2025-09-11 21:36:43 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.count()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repostiory.ts:114:43[24m
+
+  [2m[90m111[39m [22m
+  [2m[90m112[39m [36masync[39m [36mcount[39m[34m([39mwhere?[34m:[39m Prisma[34m.[39mUserWhereInput[34m)[39m[34m:[39m Promise<number> [34m{[39m[22m
+  [2m[90m113[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m114[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mcount[39m[34m([39m[22m
+The table `hactt.User` does not exist in the current database.
+2025-09-11 21:40:45 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.findMany()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repostiory.ts:64:43[24m
+
+  [2m[90m61[39m     [34m}[39m[22m
+  [2m[90m62[39m [34m)[39m[34m:[39m Promise<User[34m[[39m[34m][39m> [34m{[39m[22m
+  [2m[90m63[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m64[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mfindMany[39m[34m([39m[22m
+The table `hactt.User` does not exist in the current database.
+2025-09-11 21:40:45 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.count()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repostiory.ts:114:43[24m
+
+  [2m[90m111[39m [22m
+  [2m[90m112[39m [36masync[39m [36mcount[39m[34m([39mwhere?[34m:[39m Prisma[34m.[39mUserWhereInput[34m)[39m[34m:[39m Promise<number> [34m{[39m[22m
+  [2m[90m113[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m114[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mcount[39m[34m([39m[22m
+The table `hactt.User` does not exist in the current database.
+2025-09-11 21:45:21 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.findMany()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repostiory.ts:64:43[24m
+
+  [2m[90m61[39m     [34m}[39m[22m
+  [2m[90m62[39m [34m)[39m[34m:[39m Promise<User[34m[[39m[34m][39m> [34m{[39m[22m
+  [2m[90m63[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m64[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mfindMany[39m[34m([39m[22m
+The table `hactt.User` does not exist in the current database.
+2025-09-11 21:45:21 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.count()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repostiory.ts:114:43[24m
+
+  [2m[90m111[39m [22m
+  [2m[90m112[39m [36masync[39m [36mcount[39m[34m([39mwhere?[34m:[39m Prisma[34m.[39mUserWhereInput[34m)[39m[34m:[39m Promise<number> [34m{[39m[22m
+  [2m[90m113[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m114[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mcount[39m[34m([39m[22m
+The table `hactt.User` does not exist in the current database.
+2025-09-11 21:52:39 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.findMany()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repostiory.ts:64:43[24m
+
+  [2m[90m61[39m     [34m}[39m[22m
+  [2m[90m62[39m [34m)[39m[34m:[39m Promise<User[34m[[39m[34m][39m> [34m{[39m[22m
+  [2m[90m63[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m64[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mfindMany[39m[34m([39m[22m
+The table `hactt.User` does not exist in the current database.
+2025-09-11 21:52:39 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.count()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repostiory.ts:114:43[24m
+
+  [2m[90m111[39m [22m
+  [2m[90m112[39m [36masync[39m [36mcount[39m[34m([39mwhere?[34m:[39m Prisma[34m.[39mUserWhereInput[34m)[39m[34m:[39m Promise<number> [34m{[39m[22m
+  [2m[90m113[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m114[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mcount[39m[34m([39m[22m
+The table `hactt.User` does not exist in the current database.
+2025-09-11 21:53:14 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.findMany()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repostiory.ts:64:43[24m
+
+  [2m[90m61[39m     [34m}[39m[22m
+  [2m[90m62[39m [34m)[39m[34m:[39m Promise<User[34m[[39m[34m][39m> [34m{[39m[22m
+  [2m[90m63[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m64[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mfindMany[39m[34m([39m[22m
+The table `hactt.User` does not exist in the current database.
+2025-09-11 21:53:15 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.count()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repostiory.ts:114:43[24m
+
+  [2m[90m111[39m [22m
+  [2m[90m112[39m [36masync[39m [36mcount[39m[34m([39mwhere?[34m:[39m Prisma[34m.[39mUserWhereInput[34m)[39m[34m:[39m Promise<number> [34m{[39m[22m
+  [2m[90m113[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m114[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mcount[39m[34m([39m[22m
+The table `hactt.User` does not exist in the current database.
+2025-09-11 23:10:26 [[31merror[39m]: PrismaClientInitializationError: Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at r (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/node_modules/@prisma/client/src/runtime/core/engines/library/LibraryEngine.ts:440:17)
+    at async startServer (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/server.ts:12:9)
+2025-09-12 16:24:35 [[31merror[39m]: PrismaClientInitializationError: Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at r (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/node_modules/@prisma/client/src/runtime/core/engines/library/LibraryEngine.ts:440:17)
+    at async startServer (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/server.ts:12:9)
+2025-09-12 17:10:05 [[31merror[39m]: Error: ENOENT: no such file or directory, open '/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/crypto-config/ca-cert.pem'
+    at Object.openSync (node:fs:563:18)
+    at Object.readFileSync (node:fs:447:35)
+    at new FabricIdentityService (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/services/fabric-identity.service.ts:22:28)
+    at /home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/routes/index.ts:30:27
+    at Layer.handleRequest (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/node_modules/router/lib/layer.js:152:17)
+    at next (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/node_modules/router/lib/route.js:117:3)
+    at handle (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/node_modules/router/lib/layer.js:152:17)
+    at /home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/node_modules/router/index.js:295:15
+2025-09-12 17:12:53 [[31merror[39m]: Error: Calling enroll endpoint failed with error [Error: write EPROTO 802801BECB760000:error:0A0000C6:SSL routines:tls_get_more_records:packet length too long:ssl/record/methods/tls_common.c:662:
+]
+    at ClientRequest.<anonymous> (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/node_modules/fabric-ca-client/lib/FabricCAClient.js:327:19)
+    at ClientRequest.emit (node:events:507:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:104:11)
+    at TLSSocket.socketErrorListener (node:_http_client:518:5)
+    at TLSSocket.emit (node:events:507:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-09-12 17:14:22 [[31merror[39m]: Error: fabric-ca request enroll failed with errors [[ { code: 19, message: "CA 'ca.org1.example.com' does not exist" } ]]
+    at IncomingMessage.<anonymous> (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/node_modules/fabric-ca-client/lib/FabricCAClient.js:298:19)
+    at IncomingMessage.emit (node:events:519:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-09-12 17:14:58 [[31merror[39m]: Error: fabric-ca request enroll failed with errors [[ { code: 19, message: "CA 'ca.org1.example.com' does not exist" } ]]
+    at IncomingMessage.<anonymous> (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/node_modules/fabric-ca-client/lib/FabricCAClient.js:298:19)
+    at IncomingMessage.emit (node:events:519:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-09-12 17:15:31 [[31merror[39m]: Error: fabric-ca request enroll failed with errors [[ { code: 19, message: "CA 'ca.org1.example.com' does not exist" } ]]
+    at IncomingMessage.<anonymous> (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/node_modules/fabric-ca-client/lib/FabricCAClient.js:298:19)
+    at IncomingMessage.emit (node:events:519:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-09-12 17:17:15 [[31merror[39m]: Error: fabric-ca request enroll failed with errors [[ { code: 19, message: "CA 'ca.org1.example.com' does not exist" } ]]
+    at IncomingMessage.<anonymous> (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/node_modules/fabric-ca-client/lib/FabricCAClient.js:298:19)
+    at IncomingMessage.emit (node:events:519:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-09-12 17:18:32 [[31merror[39m]: Error: fabric-ca request enroll failed with errors [[ { code: 19, message: "CA 'Org1CA' does not exist" } ]]
+    at IncomingMessage.<anonymous> (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/node_modules/fabric-ca-client/lib/FabricCAClient.js:298:19)
+    at IncomingMessage.emit (node:events:519:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-09-12 17:18:51 [[31merror[39m]: Error: fabric-ca request enroll failed with errors [[ { code: 19, message: "CA 'Org1CA' does not exist" } ]]
+    at IncomingMessage.<anonymous> (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/node_modules/fabric-ca-client/lib/FabricCAClient.js:298:19)
+    at IncomingMessage.emit (node:events:519:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-09-12 17:20:17 [[31merror[39m]: Error: User is not enrolled in the project
+    at FabricIdentityService.registerAndEnrollUser (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/services/fabric-identity.service.ts:96:32)
+    at async /home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/routes/index.ts:36:5
+2025-09-12 17:22:43 [[31merror[39m]: Error: User is not enrolled in the project
+    at FabricIdentityService.registerAndEnrollUser (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/services/fabric-identity.service.ts:96:32)
+    at async /home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/routes/index.ts:36:5
+2025-09-12 17:24:43 [[31merror[39m]: Error: User is not enrolled in the project
+    at FabricIdentityService.registerAndEnrollUser (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/services/fabric-identity.service.ts:96:32)
+    at async /home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/routes/index.ts:36:5
+2025-09-12 17:25:15 [[31merror[39m]: Error: User is not enrolled in the project
+    at FabricIdentityService.registerAndEnrollUser (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/services/fabric-identity.service.ts:96:32)
+    at async /home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/routes/index.ts:36:5
+2025-09-13 15:53:10 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.create()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repository.ts:12:43[24m
+
+  [2m[90m 9[39m [22m
+  [2m[90m10[39m [36masync[39m [36mcreate[39m[34m([39mdata[34m:[39m Prisma[34m.[39mUserCreateInput[34m)[39m[34m:[39m Promise<User> [34m{[39m[22m
+  [2m[90m11[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m12[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mcreate[39m[34m([39m[22m{
+               data: {
+                 email: "johndoe@hactt.com",
+                 role: undefined,
+                 password: "()7*F+l9v2e1yp4Y",
+                 profile: {
+                   create: {
+                     [31mcreate[39m: {},
+                     [31m~~~~~~[39m
+             [32m?[39m       [32mid[39m[32m?[39m[32m: [39m[32mString[39m,
+             [32m?[39m       [32mfirstName[39m[32m?[39m[32m: [39m[32mString | Null[39m,
+             [32m?[39m       [32mlastName[39m[32m?[39m[32m: [39m[32mString | Null[39m,
+             [32m?[39m       [32mphone[39m[32m?[39m[32m: [39m[32mString | Null[39m,
+             [32m?[39m       [32mbio[39m[32m?[39m[32m: [39m[32mString | Null[39m
+                   }
+                 }
+               },
+               select: {
+                 id: true,
+                 email: true,
+                 role: true,
+                 password: true,
+                 createdAt: true,
+                 updatedAt: true,
+                 profile: {
+                   select: {
+                     id: true,
+                     firstName: true,
+                     lastName: true,
+                     phone: true,
+                     bio: true
+                   }
+                 }
+               }
+             }[2m)[22m
+
+Unknown argument `[31mcreate[39m`. Available options are listed in [32mgreen[39m.
+2025-09-13 15:56:18 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.create()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repository.ts:12:43[24m
+
+  [2m[90m 9[39m [22m
+  [2m[90m10[39m [36masync[39m [36mcreate[39m[34m([39mdata[34m:[39m Prisma[34m.[39mUserCreateInput[34m)[39m[34m:[39m Promise<User> [34m{[39m[22m
+  [2m[90m11[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m12[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mcreate[39m[34m([39m[22m{
+               data: {
+                 email: "johndoe@hactt.com",
+                 role: undefined,
+                 password: "1yroNQ*fu9jt*K^P",
+                 profile: {
+                   create: {
+                     [31mcreate[39m: {},
+                     [31m~~~~~~[39m
+             [32m?[39m       [32mid[39m[32m?[39m[32m: [39m[32mString[39m,
+             [32m?[39m       [32mfirstName[39m[32m?[39m[32m: [39m[32mString | Null[39m,
+             [32m?[39m       [32mlastName[39m[32m?[39m[32m: [39m[32mString | Null[39m,
+             [32m?[39m       [32mphone[39m[32m?[39m[32m: [39m[32mString | Null[39m,
+             [32m?[39m       [32mbio[39m[32m?[39m[32m: [39m[32mString | Null[39m
+                   }
+                 }
+               },
+               select: {
+                 id: true,
+                 email: true,
+                 role: true,
+                 password: true,
+                 createdAt: true,
+                 updatedAt: true,
+                 profile: {
+                   select: {
+                     id: true,
+                     firstName: true,
+                     lastName: true,
+                     phone: true,
+                     bio: true
+                   }
+                 }
+               }
+             }[2m)[22m
+
+Unknown argument `[31mcreate[39m`. Available options are listed in [32mgreen[39m.
+2025-09-13 15:57:20 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.create()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repository.ts:12:43[24m
+
+  [2m[90m 9[39m [22m
+  [2m[90m10[39m [36masync[39m [36mcreate[39m[34m([39mdata[34m:[39m Prisma[34m.[39mUserCreateInput[34m)[39m[34m:[39m Promise<User> [34m{[39m[22m
+  [2m[90m11[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m12[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mcreate[39m[34m([39m[22m{
+               data: {
+                 email: "johndoe@hactt.com",
+                 role: undefined,
+                 password: "?YT=B(2tqL0e#cfY",
+                 profile: {
+                   create: {
+                     [31mcreate[39m: {},
+                     [31m~~~~~~[39m
+             [32m?[39m       [32mid[39m[32m?[39m[32m: [39m[32mString[39m,
+             [32m?[39m       [32mfirstName[39m[32m?[39m[32m: [39m[32mString | Null[39m,
+             [32m?[39m       [32mlastName[39m[32m?[39m[32m: [39m[32mString | Null[39m,
+             [32m?[39m       [32mphone[39m[32m?[39m[32m: [39m[32mString | Null[39m,
+             [32m?[39m       [32mbio[39m[32m?[39m[32m: [39m[32mString | Null[39m
+                   }
+                 }
+               },
+               select: {
+                 id: true,
+                 email: true,
+                 role: true,
+                 password: true,
+                 createdAt: true,
+                 updatedAt: true,
+                 profile: {
+                   select: {
+                     id: true,
+                     firstName: true,
+                     lastName: true,
+                     phone: true,
+                     bio: true
+                   }
+                 }
+               }
+             }[2m)[22m
+
+Unknown argument `[31mcreate[39m`. Available options are listed in [32mgreen[39m.
+2025-09-13 15:58:37 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.create()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repository.ts:12:43[24m
+
+  [2m[90m 9[39m [22m
+  [2m[90m10[39m [36masync[39m [36mcreate[39m[34m([39mdata[34m:[39m Prisma[34m.[39mUserCreateInput[34m)[39m[34m:[39m Promise<User> [34m{[39m[22m
+  [2m[90m11[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m12[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mcreate[39m[34m([39m[22m{
+               data: {
+                 email: "johndoe@hactt.com",
+                 role: undefined,
+                 password: "M5lEbRjNgky*Y(cC",
+                 profile: {
+                   create: {
+                     [31mcreate[39m: {},
+                     [31m~~~~~~[39m
+             [32m?[39m       [32mid[39m[32m?[39m[32m: [39m[32mString[39m,
+             [32m?[39m       [32mfirstName[39m[32m?[39m[32m: [39m[32mString | Null[39m,
+             [32m?[39m       [32mlastName[39m[32m?[39m[32m: [39m[32mString | Null[39m,
+             [32m?[39m       [32mphone[39m[32m?[39m[32m: [39m[32mString | Null[39m,
+             [32m?[39m       [32mbio[39m[32m?[39m[32m: [39m[32mString | Null[39m
+                   }
+                 }
+               },
+               select: {
+                 id: true,
+                 email: true,
+                 role: true,
+                 password: true,
+                 createdAt: true,
+                 updatedAt: true,
+                 profile: {
+                   select: {
+                     id: true,
+                     firstName: true,
+                     lastName: true,
+                     phone: true,
+                     bio: true
+                   }
+                 }
+               }
+             }[2m)[22m
+
+Unknown argument `[31mcreate[39m`. Available options are listed in [32mgreen[39m.
+2025-09-13 17:50:45 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.update()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repository.ts:130:43[24m
+
+  [2m[90m127[39m     data[34m:[39m Prisma[34m.[39mUserUpdateInput[22m
+  [2m[90m128[39m [34m)[39m[34m:[39m Promise<UserWithoutPassword> [34m{[39m[22m
+  [2m[90m129[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m130[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mupdate[39m[34m([39m[22m{
+                where: {
+                  id: "aar6d1bcts4ch1uacct6yn5t"
+                },
+                data: {
+                  [31mfirstName[39m: "Abdul",
+                  [31m~~~~~~~~~[39m
+              [32m?[39m   [32mid[39m[32m?[39m[32m: [39m[32mString | StringFieldUpdateOperationsInput[39m,
+              [32m?[39m   [32memail[39m[32m?[39m[32m: [39m[32mString | StringFieldUpdateOperationsInput[39m,
+              [32m?[39m   [32mpassword[39m[32m?[39m[32m: [39m[32mString | StringFieldUpdateOperationsInput[39m,
+              [32m?[39m   [32mrole[39m[32m?[39m[32m: [39m[32mUserRole | EnumUserRoleFieldUpdateOperationsInput[39m,
+              [32m?[39m   [32mcreatedAt[39m[32m?[39m[32m: [39m[32mDateTime | DateTimeFieldUpdateOperationsInput[39m,
+              [32m?[39m   [32mupdatedAt[39m[32m?[39m[32m: [39m[32mDateTime | DateTimeFieldUpdateOperationsInput[39m,
+              [32m?[39m   [32mprofile[39m[32m?[39m[32m: [39m[32mUserProfileUpdateOneWithoutUserNestedInput[39m,
+              [32m?[39m   [32mUserProjectEnrollment[39m[32m?[39m[32m: [39m[32mUserProjectEnrollmentUpdateManyWithoutUserNestedInput[39m
+                },
+                select: {
+                  id: true,
+                  email: true,
+                  role: true,
+                  createdAt: true,
+                  updatedAt: true,
+                  profile: {
+                    select: {
+                      id: true,
+                      firstName: true,
+                      lastName: true,
+                      phone: true,
+                      bio: true
+                    }
+                  }
+                }
+              }[2m)[22m
+
+Unknown argument `[31mfirstName[39m`. Available options are listed in [32mgreen[39m.
+2025-09-13 17:56:39 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.findUnique()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repository.ts:39:43[24m
+
+  [2m[90m36[39m [22m
+  [2m[90m37[39m [36masync[39m [36mfindById[39m[34m([39mid[34m:[39m string[34m)[39m[34m:[39m Promise<UserWithoutPassword | [36mnull[39m> [34m{[39m[22m
+  [2m[90m38[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m39[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mfindUnique[39m[34m([39m[22m{
+               where: {
+                 id: "cmfgt6iac002zufgdy3evu4k0"
+               },
+               select: {
+                 id: true,
+                 email: true,
+                 role: true,
+                 createdAt: true,
+                 updatedAt: true,
+                 profile: {
+                   select: {
+                     id: true,
+                     firstName: true,
+                     lastName: true,
+                     phone: true,
+                     [31mbio[39m: true,
+                     [31m~~~[39m
+             [32m?[39m       [32muserId[39m[32m?[39m[32m: [39m[32mtrue[39m,
+             [32m?[39m       [32muser[39m[32m?[39m[32m: [39m[32mtrue[39m
+                   }
+                 }
+               }
+             }[2m)[22m
+
+Unknown field [31m`bio`[39m for [1mselect[22m statement on model [1m`UserProfile`[22m. Available options are listed in [32mgreen[39m.
+2025-09-13 18:01:56 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.update()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repository.ts:126:43[24m
+
+  [2m[90m123[39m     data[34m:[39m Prisma[34m.[39mUserUpdateInput[22m
+  [2m[90m124[39m [34m)[39m[34m:[39m Promise<UserWithoutPassword> [34m{[39m[22m
+  [2m[90m125[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m126[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mupdate[39m[34m([39m[22m{
+                where: {
+                  id: "h6dvlxet8q4mfmx3kvf6ujho"
+                },
+                data: {
+                  [31mfirstName[39m: "Abdul",
+                  [31m~~~~~~~~~[39m
+                  profile: {
+                    update: {
+                      firstName: undefined,
+                      lastName: undefined,
+                      phone: undefined
+                    }
+                  },
+              [32m?[39m   [32mid[39m[32m?[39m[32m: [39m[32mString | StringFieldUpdateOperationsInput[39m,
+              [32m?[39m   [32memail[39m[32m?[39m[32m: [39m[32mString | StringFieldUpdateOperationsInput[39m,
+              [32m?[39m   [32mpassword[39m[32m?[39m[32m: [39m[32mString | StringFieldUpdateOperationsInput[39m,
+              [32m?[39m   [32mrole[39m[32m?[39m[32m: [39m[32mUserRole | EnumUserRoleFieldUpdateOperationsInput[39m,
+              [32m?[39m   [32mcreatedAt[39m[32m?[39m[32m: [39m[32mDateTime | DateTimeFieldUpdateOperationsInput[39m,
+              [32m?[39m   [32mupdatedAt[39m[32m?[39m[32m: [39m[32mDateTime | DateTimeFieldUpdateOperationsInput[39m,
+              [32m?[39m   [32mUserProjectEnrollment[39m[32m?[39m[32m: [39m[32mUserProjectEnrollmentUpdateManyWithoutUserNestedInput[39m
+                },
+                select: {
+                  id: true,
+                  email: true,
+                  role: true,
+                  createdAt: true,
+                  updatedAt: true,
+                  profile: {
+                    select: {
+                      id: true,
+                      firstName: true,
+                      lastName: true,
+                      phone: true
+                    }
+                  }
+                }
+              }[2m)[22m
+
+Unknown argument `[31mfirstName[39m`. Available options are listed in [32mgreen[39m.
+2025-09-13 18:03:23 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.update()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repository.ts:126:43[24m
+
+  [2m[90m123[39m     data[34m:[39m Prisma[34m.[39mUserUpdateInput[22m
+  [2m[90m124[39m [34m)[39m[34m:[39m Promise<UserWithoutPassword> [34m{[39m[22m
+  [2m[90m125[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m126[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mupdate[39m[34m([39m[22m{
+                where: {
+                  id: "h6dvlxet8q4mfmx3kvf6ujho"
+                },
+                data: {
+                  [31mfirstName[39m: "Abdul",
+                  [31m~~~~~~~~~[39m
+                  profile: {
+                    update: {
+                      firstName: undefined,
+                      lastName: undefined,
+                      phone: undefined
+                    }
+                  },
+              [32m?[39m   [32mid[39m[32m?[39m[32m: [39m[32mString | StringFieldUpdateOperationsInput[39m,
+              [32m?[39m   [32memail[39m[32m?[39m[32m: [39m[32mString | StringFieldUpdateOperationsInput[39m,
+              [32m?[39m   [32mpassword[39m[32m?[39m[32m: [39m[32mString | StringFieldUpdateOperationsInput[39m,
+              [32m?[39m   [32mrole[39m[32m?[39m[32m: [39m[32mUserRole | EnumUserRoleFieldUpdateOperationsInput[39m,
+              [32m?[39m   [32mcreatedAt[39m[32m?[39m[32m: [39m[32mDateTime | DateTimeFieldUpdateOperationsInput[39m,
+              [32m?[39m   [32mupdatedAt[39m[32m?[39m[32m: [39m[32mDateTime | DateTimeFieldUpdateOperationsInput[39m,
+              [32m?[39m   [32mUserProjectEnrollment[39m[32m?[39m[32m: [39m[32mUserProjectEnrollmentUpdateManyWithoutUserNestedInput[39m
+                },
+                select: {
+                  id: true,
+                  email: true,
+                  role: true,
+                  createdAt: true,
+                  updatedAt: true,
+                  profile: {
+                    select: {
+                      id: true,
+                      firstName: true,
+                      lastName: true,
+                      phone: true
+                    }
+                  }
+                }
+              }[2m)[22m
+
+Unknown argument `[31mfirstName[39m`. Available options are listed in [32mgreen[39m.
+2025-09-13 22:50:58 [[31merror[39m]: PrismaClientInitializationError: Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at r (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/node_modules/@prisma/client/src/runtime/core/engines/library/LibraryEngine.ts:440:17)
+    at async startServer (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/server.ts:12:9)
+2025-09-14 13:46:28 [[31merror[39m]: PrismaClientInitializationError: Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at r (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/node_modules/@prisma/client/src/runtime/core/engines/library/LibraryEngine.ts:440:17)
+    at async startServer (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/server.ts:12:9)
+2025-09-14 13:53:08 [[31merror[39m]: PrismaClientInitializationError: Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at r (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/node_modules/@prisma/client/src/runtime/core/engines/library/LibraryEngine.ts:440:17)
+    at async startServer (/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/server.ts:12:9)
+2025-09-14 14:27:37 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.findMany()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repository.ts:95:43[24m
+
+  [2m[90m92[39m     [34m}[39m[22m
+  [2m[90m93[39m [34m)[39m[34m:[39m Promise<UserWithoutPassword[34m[[39m[34m][39m> [34m{[39m[22m
+  [2m[90m94[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m95[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mfindMany[39m[34m([39m[22m{
+               where: {},
+               select: {
+                 id: true,
+                 email: true,
+                 role: true,
+                 createdAt: true,
+                 updatedAt: true,
+                 profile: {
+                   select: {
+                     id: true,
+                     firstName: true,
+                     lastName: true,
+                     phone: true
+                   }
+                 }
+               },
+               skip: 0,
+               take: 10,
+               orderBy: {
+                 [31mfirstName[39m: "desc",
+                 [31m~~~~~~~~~[39m
+             [32m?[39m   [32mid[39m[32m?[39m[32m: [39m[32mSortOrder[39m,
+             [32m?[39m   [32memail[39m[32m?[39m[32m: [39m[32mSortOrder[39m,
+             [32m?[39m   [32mpassword[39m[32m?[39m[32m: [39m[32mSortOrder[39m,
+             [32m?[39m   [32mrole[39m[32m?[39m[32m: [39m[32mSortOrder[39m,
+             [32m?[39m   [32mcreatedAt[39m[32m?[39m[32m: [39m[32mSortOrder[39m,
+             [32m?[39m   [32mupdatedAt[39m[32m?[39m[32m: [39m[32mSortOrder[39m,
+             [32m?[39m   [32mprofile[39m[32m?[39m[32m: [39m[32mUserProfileOrderByWithRelationInput[39m,
+             [32m?[39m   [32mUserProjectEnrollment[39m[32m?[39m[32m: [39m[32mUserProjectEnrollmentOrderByRelationAggregateInput[39m
+               }
+             }[2m)[22m
+
+Unknown argument `[31mfirstName[39m`. Available options are listed in [32mgreen[39m.
+2025-09-14 14:45:41 [[31merror[39m]: Database error: 
+[31mInvalid [1m`this.prisma.user.findMany()`[22m invocation in[39m
+[4m/home/chocolatebrownies/fabric-hactt/fabric-samples/hactt-rest/src/repositories/user.repository.ts:95:43[24m
+
+  [2m[90m92[39m     [34m}[39m[22m
+  [2m[90m93[39m [34m)[39m[34m:[39m Promise<UserWithoutPassword[34m[[39m[34m][39m> [34m{[39m[22m
+  [2m[90m94[39m     [36mtry[39m [34m{[39m[22m
+[1m[31m→[39m[22m [2m[90m95[39m         [36mreturn[39m [36mawait[39m [36mthis[39m[34m.[39mprisma[34m.[39muser[34m.[39m[36mfindMany[39m[34m([39m[22m{
+               where: {},
+               select: {
+                 id: true,
+                 email: true,
+                 role: true,
+                 createdAt: true,
+                 updatedAt: true,
+                 profile: {
+                   select: {
+                     id: true,
+                     firstName: true,
+                     lastName: true,
+                     phone: true
+                   }
+                 }
+               },
+               skip: 0,
+               take: 10,
+               orderBy: {
+                 profile: {
+                   firstName: "desc"
+                 },
+                 email: "desc"
+               }
+               [31m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[39m
+             }[2m)[22m
+
+Argument `[1morderBy[22m`: Invalid value provided. Expected [32mUserOrderByWithRelationInput[][39m, provided [31mObject[39m.

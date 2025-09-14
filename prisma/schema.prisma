@@ -1,0 +1,164 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  // output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid(2))
+  email     String   @unique
+  password  String
+  role      UserRole @default(USER)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  profile UserProfile?
+
+  UserProjectEnrollment UserProjectEnrollment[]
+}
+
+model UserProfile {
+  id        String  @id @default(cuid())
+  userId    String  @unique
+  firstName String?
+  lastName  String?
+  phone     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Project {
+  id          String     @id @default(cuid(2))
+  name        String
+  description String?
+  channelName String?    @unique
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  TestPlan    TestPlan[]
+
+  UserProjectEnrollment UserProjectEnrollment[]
+}
+
+model UserProjectEnrollment {
+  id        String     @id @default(cuid())
+  userId    String
+  projectId String
+  roleId    String     // Foreign key to ProjectRole
+
+  user      User       @relation(fields: [userId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+  project   Project    @relation(fields: [projectId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+  role      ProjectRole @relation(fields: [roleId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+
+  @@unique([userId, projectId])
+}
+
+
+model ProjectRole {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  ProjectRolePermission ProjectRolePermission[]
+  UserProjectEnrollment UserProjectEnrollment[]
+}
+
+model Permission {
+  id          String   @id @default(cuid())
+  code        String   @unique // e.g. testplan.create
+  description String?
+  createdAt   DateTime @default(now())
+
+  RolePermission ProjectRolePermission[]
+}
+
+model ProjectRolePermission {
+  id           String @id @default(cuid())
+  roleId       String
+  permissionId String
+
+  role       ProjectRole @relation(fields: [roleId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+  permission Permission  @relation(fields: [permissionId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+
+  @@unique([roleId, permissionId])
+}
+
+model TestPlan {
+  id          String   @id @default(cuid(2))
+  name        String
+  description String?
+  projectId   String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  project     Project  @relation(fields: [projectId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+
+  // Join table relationship with TestSuite
+  testSuites TestPlan_Suites[]
+}
+
+model TestSuite {
+  id          String   @id @default(cuid(2))
+  name        String
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Join table relationship with TestCase
+  testCases TestSuite_Cases[]
+
+  // Link to the join table with TestPlan
+  testPlans TestPlan_Suites[]
+}
+
+model TestCase {
+  id             String   @id @default(cuid(2))
+  name           String
+  description    String?
+  steps          String[]
+  expectedResult String
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  // Link to the join table with TestSuite
+  testSuites TestSuite_Cases[]
+}
+
+// Join table for TestPlan to TestSuite
+model TestPlan_Suites {
+  testPlanId  String
+  testSuiteId String
+  createdAt   DateTime @default(now())
+
+  TestPlan  TestPlan  @relation(fields: [testPlanId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+  TestSuite TestSuite @relation(fields: [testSuiteId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+
+  @@id([testPlanId, testSuiteId])
+}
+
+// Join table for TestSuite to TestCase
+model TestSuite_Cases {
+  testSuiteId String
+  testCaseId  String
+  createdAt   DateTime @default(now())
+
+  TestSuite TestSuite @relation(fields: [testSuiteId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+  TestCase  TestCase  @relation(fields: [testCaseId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+
+  @@id([testSuiteId, testCaseId])
+}
+
+enum UserRole {
+  USER
+  ADMIN
+}

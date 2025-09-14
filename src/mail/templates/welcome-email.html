@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Email Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, sans-serif;
+      }
+
+      body {
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+        color: #172b4d;
+        line-height: 1.6;
+      }
+
+      .email-container {
+        max-width: 650px;
+        background: white;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        border: 1px solid #dfe1e6;
+      }
+
+      .email-header {
+        background: white;
+        padding: 24px 30px;
+        border-bottom: 1px solid #dfe1e6;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        height: 32px;
+      }
+
+      .logo-text {
+        font-weight: 600;
+        font-size: 20px;
+        color: #0052cc;
+        margin-left: 12px;
+      }
+
+      .email-body {
+        padding: 30px;
+      }
+
+      .welcome-title {
+        font-size: 24px;
+        font-weight: 500;
+        color: #172b4d;
+        margin-bottom: 16px;
+      }
+
+      .welcome-text {
+        font-size: 15px;
+        color: #42526e;
+        margin-bottom: 24px;
+      }
+
+      .credentials-box {
+        background: #f4f5f7;
+        border: 1px solid #dfe1e6;
+        border-radius: 3px;
+        padding: 20px;
+        margin: 20px 0;
+      }
+
+      .credential-item {
+        display: flex;
+        margin-bottom: 12px;
+        align-items: center;
+      }
+
+      .credential-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .credential-label {
+        font-weight: 600;
+        min-width: 160px;
+        color: #42526e;
+        font-size: 14px;
+      }
+
+      .credential-value {
+        font-weight: 500;
+        color: #172b4d;
+        font-family: monospace;
+        font-size: 15px;
+      }
+
+      .action-button {
+        display: inline-block;
+        background: #0052cc;
+        color: white;
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 3px;
+        font-weight: 500;
+        font-size: 14px;
+        margin: 16px 0;
+        border: none;
+        cursor: pointer;
+      }
+
+      .security-note {
+        background: #fffae6;
+        border: 1px solid #ffe380;
+        padding: 16px;
+        border-radius: 3px;
+        margin: 20px 0;
+        font-size: 14px;
+        color: #42526e;
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .security-icon {
+        color: #ffab00;
+        margin-right: 12px;
+        font-size: 16px;
+        margin-top: 2px;
+      }
+
+      .divider {
+        height: 1px;
+        background-color: #dfe1e6;
+        margin: 24px 0;
+      }
+
+      .next-steps {
+        margin: 24px 0;
+      }
+
+      .step {
+        display: flex;
+        margin-bottom: 16px;
+        align-items: flex-start;
+      }
+
+      .step-number {
+        background: #0052cc;
+        color: white;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 600;
+        margin-right: 12px;
+        flex-shrink: 0;
+      }
+
+      .step-content {
+        flex: 1;
+      }
+
+      .step-title {
+        font-weight: 600;
+        margin-bottom: 4px;
+        color: #172b4d;
+        font-size: 14px;
+      }
+
+      .step-description {
+        font-size: 14px;
+        color: #42526e;
+      }
+
+      .email-footer {
+        background: #f4f5f7;
+        color: #42526e;
+        padding: 20px 30px;
+        font-size: 12px;
+        border-top: 1px solid #dfe1e6;
+      }
+
+      .footer-note {
+        background: rgba(9, 30, 66, 0.04);
+        padding: 12px;
+        border-radius: 3px;
+        margin: 12px 0;
+        color: #42526e;
+        font-style: italic;
+        text-align: center;
+      }
+
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin: 12px 0;
+      }
+
+      .footer-link {
+        color: #0052cc;
+        text-decoration: none;
+      }
+
+      .footer-text {
+        text-align: center;
+        margin: 8px 0;
+      }
+
+      @media (max-width: 650px) {
+        .email-body {
+          padding: 20px;
+        }
+
+        .credential-item {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .credential-label {
+          margin-bottom: 4px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="email-header">
+        <div class="logo">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 23.732 8.26801 30 16 30Z"
+              fill="#0052CC"
+            />
+            <path
+              d="M19.7333 13.9333V9.46667L16 6L12.2667 9.46667V13.9333L16 17.4L19.7333 13.9333Z"
+              fill="white"
+            />
+            <path
+              d="M12.2667 13.9333L16 17.4V22.8667L9.4667 19.4V13.9333H12.2667Z"
+              fill="white"
+            />
+            <path
+              d="M22.5333 13.9333V19.4L16 22.8667V17.4L19.7333 13.9333H22.5333Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <div class="logo-text">HACTT</div>
+      </div>
+
+      <div class="email-body">
+        <h1 class="welcome-title">
+          Welcome to Hyper Agile Collaboration Testing Tool!
+        </h1>
+
+        <p class="welcome-text">Hello <strong>{{email}}</strong>,</p>
+
+        <p class="welcome-text">
+          Your account has been successfully created. Here are your login
+          credentials:
+        </p>
+
+        <div class="credentials-box">
+          <div class="credential-item">
+            <div class="credential-label">Email address:</div>
+            <div class="credential-value">{{email}}</div>
+          </div>
+
+          <div class="credential-item">
+            <div class="credential-label">Temporary password:</div>
+            <div class="credential-value">{{password}}</div>
+          </div>
+        </div>
+
+        <a href="#" class="action-button"> Sign in to HACTT </a>
+
+        <div class="security-note">
+          <div class="security-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div>
+            <strong>Security note:</strong> For your account's security, please
+            change your password after first login.
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="next-steps">
+          <h2
+            style="
+              font-size: 16px;
+              font-weight: 600;
+              margin-bottom: 16px;
+              color: #172b4d;
+            "
+          >
+            Next steps
+          </h2>
+
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <div class="step-title">Complete your profile</div>
+              <div class="step-description">
+                Add your information to help teammates recognize you
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <div class="step-title">Explore your projects</div>
+              <div class="step-description">
+                Check out the projects you've been added to
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <div class="step-title">Testing</div>
+              <div class="step-description">
+                Start testing and collaborate with others in your projects
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="welcome-text">
+          If you have any questions, feel free to
+          <a href="#" style="color: #0052cc; text-decoration: none"
+            >contact our support team</a
+          >.
+        </p>
+
+        <p class="welcome-text">Happy Testing!<br />The Hyper Agile Team</p>
+      </div>
+
+      <div class="email-footer">
+        <div class="footer-note">
+          This is an automated email. Please do not reply to this message.
+        </div>
+
+        <p class="footer-text">Hyper Agile Collaboration Tesing Tools</p>
+
+        <div class="footer-links">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
